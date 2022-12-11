@@ -1,0 +1,107 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-light: hsl(179, 62%, 47%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2 {
+  padding-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+li {
+  list-style: none;
+  line-height: 1.25rem;
+}
+
+ul {
+  padding-left: 0;
+  font-size: 0.85rem;
+}
+
+.container {
+  background-color: var(--light-gray);
+  padding: 4.5rem 2rem;
+}
+
+.card {
+  padding: 1.65rem;
+}
+
+.card-main {
+  background: var(--white);
+}
+
+.leading {
+  font-size: 0.85rem;
+  color: var(--grayish-blue);
+}
+
+.card-subscribe {
+  background: var(--cyan);
+}
+
+.card-title {
+  font-size: 1.15rem;
+}
+
+.title-main {
+  color: var(--cyan);
+  font-size: 1.3rem;
+}
+.title-main-sub {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--bright-yellow);
+}
+
+.card-sub {
+  color: var(--white);
+}
+
+.card-why {
+  background-color: var(--cyan-light);
+}
+
+.price-main {
+  font-size: 2rem;
+}
+
+.price-description {
+  display: flex;
+  gap: 1rem;
+}
+
+.sub-duration {
+  color: var(--light-gray);
+  align-self: center;
+}
+
+.sub-lead {
+  padding-bottom: 3rem;
+}
+
+.btn-signup {
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  width: 100%;
+  padding: 1rem 6rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
