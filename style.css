@@ -14,6 +14,7 @@
 
 body {
   font-family: "Karla", sans-serif;
+  background-color: var(--light-gray);
 }
 
 h1,
@@ -27,7 +28,8 @@ p {
 
 li {
   list-style: none;
-  line-height: 1.25rem;
+  line-height: 1.15rem;
+  color: var(--light-gray);
 }
 
 ul {
@@ -36,7 +38,6 @@ ul {
 }
 
 .container {
-  background-color: var(--light-gray);
   padding: 4.5rem 2rem;
 }
 
@@ -46,6 +47,7 @@ ul {
 
 .card-main {
   background: var(--white);
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .leading {
@@ -77,6 +79,7 @@ ul {
 
 .card-why {
   background-color: var(--cyan-light);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .price-main {
@@ -94,14 +97,60 @@ ul {
 }
 
 .sub-lead {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .btn-signup {
   background-color: var(--bright-yellow);
-  color: var(--light-gray);
+  color: var(--white);
   width: 100%;
-  padding: 1rem 6rem;
+  padding: 0.85rem;
   text-decoration: none;
   border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px #16161629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 295px;
+}
+
+@media (width >=768px) {
+  body {
+    font-size: 0.85rem;
+  }
+  main {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 546px;
+  }
+  .card-main {
+    grid-column: span 2;
+  }
+
+  .card-subscribe {
+    border-radius: 0 0 0 0.5rem;
+  }
+  .card-why {
+    border-radius: 0 0 0.5rem 0;
+  }
+
+  .title-main-sub {
+    padding-bottom: 0.5rem;
+  }
+
+  .sub-lead {
+    padding-bottom: 1.25rem;
+  }
 }
